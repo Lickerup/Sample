@@ -1,0 +1,227 @@
+h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 4px 4px 2px green;
+}
+
+.title {
+    color: orange;
+}
+
+#italic {
+    color: peachpuff;
+}
+
+.container {
+    border: 10px dashed aqua;
+    margin: 50px 5px 25px 0px;
+    padding: 30px 5px 10px 35px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: blue;
+    
+}
+
+/* .background{
+    
+} */
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: blue;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.yoda {
+    border-radius: 50%;
+}
+
+img{
+    box-shadow: 8px 8px 10px 8px gold;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    margin: 30px;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, yellow, pink, purple);
+}
+
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(0.5);}
+}
+
+#box3 {
+    animation: getBigger infinite 8s linear;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+@keyframes changeColors {
+    0% {background-color: orchid;}
+    25% {background-color: purple;}
+    50% {background-color: red;}
+    75% {background-color: yellow;}
+    100% {background-color: orchid;}
+}
+
+#box4 {
+    animation: changeColors 3s 2 forwards;
+}
+
+@keyframes moveMe {
+    0% {left: 0px; top: 0px; }
+    25% {left: 100px; top: 0px; }
+    50% {left: 100px; top: 200px; }
+    75% {left: 0px; top: 200px; }
+    100% {left: 0px; top: 0px; }
+}
+
+#box5 {
+    animation: moveMe 5s 3;
+    background-color: red;
+    position: relative;
+}
+#box6 {
+    position: relative;
+    top: 10px;
+    left:20px
+}
+
+html {
+    background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2017/11/My-most-popular-pic-since-I-started-dog-photography-5a0b38cbd5e1e__880.jpg);
+}
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+/* .input-field {
+    margin: 20px;
+} */
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color:yellow;
+    color: #444;
+}
+
+.Box {
+    background-color: yellow;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col /span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, yellow, purple, orange);
+}
+.d {
+    grid-column: col  / span  3 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 3 / span 3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://media.giphy.com/media/mjORAqVKYtW7e/200_d.gif);
+}
