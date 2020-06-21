@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header>
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Contact me</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sindex.html">home</a></li>
+        <li><a href="index.html">home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="contact2.html">Contact2</a></li>
@@ -25,6 +25,7 @@
       </ul>
     </div>
   </nav>
+  </header>
 
   <div class="contact-box">
     <form class="col s12">
@@ -57,6 +58,8 @@
             </div>
             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
               <i class="material-icons right">send</i>
+              <form name="contactDemo" method="POST" data-netlify="true" class="col s12" ></form>>
+              <input type="hidden" name="form-name" value="contact" />
             </button>
           </div>
         </form>
